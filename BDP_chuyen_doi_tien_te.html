@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 50%;
+            text-align: center;
+        }
+        body{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<table border="0px">
+    <tr >
+        <th> Amount</th>
+        <th> From currency</th>
+        <th> To Currency</th>
+    </tr>
+    <tr>
+        <td> <input type="text" id="Amount"> </td>
+        <td>
+            <select id="From Currency"> <option value="VND">VND</option>
+                                   <option value="USD"> USD </option>
+            </select>
+        </td>
+        <td>
+            <select id="To Currency "> <option value="VND"> VND </option>
+                                  <option value="USD"> USD </option>
+            </select>
+        </td>
+        <td> <button onclick="chuyendoitiente()"; style="color: white; background-color: dodgerblue"> Convert </button> </td>
+    </tr>
+</table>
+<p id="demo" style="color: blue"> </p>
+<script>
+    function chuyendoitiente() {
+        let soluong=document.getElementById('Amount').value;
+        let select1=document.getElementById('From Currency').value;
+        let select2=document.getElementById('To Currency ').value;
+
+        if (select1 == select2) {
+            document.getElementById("demo").innerText="Result: " + soluong;
+        }
+        if (select1 == "VND" && select2 =="USD")
+        {
+            document.getElementById("demo").innerText="Result: " + soluong / 23000;
+        }
+        if (select1 == "USD" && select2 == "VND")
+        {
+            document.getElementById("demo").innerText="Result: " + soluong * 23000;
+        }
+
+    }
+</script>
+</body>
+</html>
