@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: chartreuse;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" id="Month">
+    <button type="button" onclick="tinhsongay()">  Tính Số Ngày </button>
+    <h2 id="KetQua"> </h2>
+    <script>
+        function tinhsongay() {
+            let Month = parseInt(document.getElementById("Month").value);
+            switch (Month) {
+                case 1:
+                    (Month == 1)
+                case 3:
+                    (Month == 3)
+                case 5:
+                    (Month == 5)
+                case 7:
+                    (Month == 7)
+                case 8:
+                    (Month == 8)
+                case 10:
+                    (Month == 10)
+                case 12:
+                    (Month == 12)
+                {
+                    document.getElementById("KetQua").innerText = "tháng" + Month + "có 31 ngày";
+                }
+                    break;
+                case 4:
+                    (Month == 4)
+                case 6:
+                    (Month == 6)
+                case 9:
+                    (Month == 9)
+                case 11:
+                    (Month == 11)
+                {
+                    document.getElementById("KetQua").innerText = "tháng" + Month + "có 30 ngày";
+                }
+                    break;
+                case 2:
+                    (Month == 2)
+                {
+                    document.getElementById("KetQua").innerText = "tháng" + Month + "có 29 or 28 ngày";
+                    break;
+                }
+                default:
+                    document.getElementById("KetQua").innerText = "Không có tháng này";
+            }
+        }
+    </script>
+</form>
+</body>
+</html>
