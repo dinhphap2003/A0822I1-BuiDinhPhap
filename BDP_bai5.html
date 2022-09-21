@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = +prompt("Nhập điểm bài kiểm tra");
+    let giuaky = +prompt("Nhập điểm thi giữa kỳ");
+    let cuoiky= +prompt("Nhập điểm thi cuối kì");
+    let tong = ((kiemtra* 20/100)+(giuaky*35/100)+(cuoiky*50/100));
+    if (tong >= 8){
+        alert("Giỏi");
+    }else if (tong >= 7){
+        alert("Khá");
+    }else if (tong >= 5){
+        alert("Trung bình");
+    }else{
+        alert("Yếu");
+    }
+</script>
+</body>
+</html>
