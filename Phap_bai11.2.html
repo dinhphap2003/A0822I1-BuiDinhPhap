@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thunhap = +prompt("Nhập thu nhập cá nhân:");
+    thue = thunhap * 0.1;
+    if (thunhap < 100){
+        thue = thunhap * 0.100;
+    }else if (thunhap < 200){
+        thue = thunhap * 0.105;
+    }else if (thunhap< 300){
+        thue = thunhap * 0.200;
+    }else {
+        thue = thunhap* 0.300;
+    }
+    alert("Giá tiền thuế: " + thue);
+</script>
+</body>
+</html>
