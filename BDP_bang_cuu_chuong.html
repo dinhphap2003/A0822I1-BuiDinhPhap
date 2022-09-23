@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> BẢNG CỬU CHƯƠNG</h1>
+<p id="KetQua"></p>
+<script>
+    let multiplication = '<table border="1">';
+    for (let i = 1; i < 10; i++){
+        multiplication += '<tr>';
+        for (let j = 2; j < 10; j++) {
+         multiplication += ' <td style="width: 100px;height: 20px"> ' + j + 'x' + i + "=" + (i*j) + '</td>';
+        }
+        multiplication += '</tr>';
+    }
+    multiplication += '</table>';
+    document.getElementById("KetQua").innerHTML = multiplication;
+</script>
+</body>
+</html>
