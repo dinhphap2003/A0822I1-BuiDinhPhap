@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let lainganhang = 0;
+    let money =+prompt("Số tiền ba đầu:");
+    let month =+prompt("Số tháng cho vay:");
+    let interest =+prompt("Lãi xuất hàng tháng:");
+    if (month < 5) {
+        lainganhang = money * interest * 0.10;
+    } else if (month < 10) {
+        lainganhang = money * interest * 0.15;
+    } else if (month < 50) {
+        lainganhang = money * interest * 0.40;
+    } else {
+        lainganhang = money * interest * 0.50;
+    }
+    alert("Tiền lãi ngân hàng là: " + lainganhang);
+</script>
+</body>
+</html>
