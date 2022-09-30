@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//Hình 1
+    let n = +prompt("Nhập giá trị :");
+    for (let i = 0; i <= n; i++){
+        for (let j = 1; j <= i; j++){
+            document.writeln("*")
+        }
+        document.write("<br>")
+    }
+//Hình2
+    document.write(" <br>")
+    let N= +prompt("Nhập giá trị :");
+    for (let i = N; i >= 1; i--){
+        for (let j = 1; j <= i; j++){
+            document.writeln("*")
+        }
+        document.write("<br>")
+    }
+//Hình 3
+    document.write("<br>")
+    let a = +prompt("Nhập giá trị:")
+    for (let i = 0; i <= a; i++) {
+        for (let j = i; j < a; j++) {
+            document.write("&nbsp" + "&nbsp") ;
+        }
+        for (let j = 0; j < i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+//Hình 4
+    document.write(" <br>")
+    let A = +prompt("Nhập giá trị:")
+    for (let i = 0; i < A; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write("&nbsp" + "&nbsp");
+        }
+        for (let j = i; j < A; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+}
+</script>
+</body>
+</html>
