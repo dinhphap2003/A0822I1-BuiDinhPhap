@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="Dich" type="text" placeholder="Nhập từ điển">
+<input type="button" onclick="english()" value="Dịch">
+<p id="result"> </p>
+<script>
+    let EL = ['Hello', 'Goodbye', 'Go a way', 'Pig'];
+    let VN = ['Xin chào', 'Tạm biệt', 'Đi ra chỗ khác', 'Con Heo'];
+    let index = 100;
+    function english() {
+        let myEL = document.getElementById('Dich').value;
+        for (let i = 0; i < EL.length; i++){
+            if (myEL === EL[i]){
+                index = i;
+                document.getElementById('result').innerText = VN[index];
+            }
+        }
+        if (index === 100 ){
+            document.getElementById('result').innerText= "Không tìm ra";
+        }
+    }
+</script>
+</body>
+</html>
