@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array = [10, 20, 120, 198, 153, 15, 30, 100, 14, 58,5];
+    let max = Array[0];
+    let index = 0;
+    for (let i = 0; i < Array.length ; i++) {
+            if (Array[i] > max){
+                max = Array[i];
+                index = i;
+        }
+    }
+    document.write("Max" +" "+max +" "+ "vị trí:" +" " + index + "<br>");
+</script>
+</body>
+</html>

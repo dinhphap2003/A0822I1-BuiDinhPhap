@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numArray = [5, -2, 3, -6, -16, 12,-23, 100];
+    let V =+prompt("Nhập vào số nguyên V:");
+    for (let i = 0; i < numArray.length ; i++) {
+        if (V == numArray[i]){
+            V = numArray.splice(i,1);
+            V = numArray.push(0);
+        }
+    }
+    document.write(numArray);
+</script>
+</body>
+</html>
