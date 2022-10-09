@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số mảng của phần tử");
+    let Array = [];
+    for (let i = 0; i < n; i++){
+        Array[i] = prompt("Nhập phần tử thứ " + i + " của mảng");
+    }
+    let count = 0;
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] % 1 == 0){
+            count ++;
+        }
+    }
+    document.write("<br>"+"Số kí tự số trong mảng là:"+count);
+</script>
+</body>
+</html>
