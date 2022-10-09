@@ -10,16 +10,11 @@
     let money =+prompt("Số tiền ba đầu:");
     let month =+prompt("Số tháng cho vay:");
     let interest =+prompt("Lãi xuất hàng tháng:");
-    if (month < 5) {
-        lainganhang = money * interest * 0.10;
-    } else if (month < 10) {
-        lainganhang = money * interest * 0.15;
-    } else if (month < 50) {
-        lainganhang = money * interest * 0.40;
-    } else {
-        lainganhang = money * interest * 0.50;
+    for (let i = 1; i <= month; i++){
+        lainganhang = money * (interest/100);
+        money += lainganhang;
     }
-    alert("Tiền lãi ngân hàng là: " + lainganhang);
+    document.write("Lãi ngân hàng: "+money);
 </script>
 </body>
 </html>
