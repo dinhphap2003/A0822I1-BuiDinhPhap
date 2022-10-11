@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="footToMeter"> </p>
+<p id="meterToFoot"> </p>
+<script>
+   let nummeet =+prompt("Nhập số meet:");
+   let numfoot = +prompt("Nhập số foot");
+   function footToMeter(foot){
+       document.getElementById('footToMeter').innerText = "Số foot là: " +foot;
+   }
+   function meterToFoot(meter) {
+       document.getElementById('meterToFoot').innerText = "Số meet là: " + meter;
+   }
+   meterToFoot( 3.279 * nummeet);
+   footToMeter(0.305 * numfoot);
+</script>
+</body>
+</html>
