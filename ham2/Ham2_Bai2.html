@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = +prompt("Nhập bán kính:");
+  let pi = 3.14;
+  function perimeter(num1){
+    result = num1*2*pi;
+    alert("Chu vi hình tròn:" +result);
+    return result;
+  }
+  function area(num2){
+    result2= Math.pow(num2,2)*pi;
+    alert("Diện tích hình tròn là:"+result2);
+    return result2;
+  }
+  perimeter(number);
+  area(number);
+</script>
+</body>
+</html>

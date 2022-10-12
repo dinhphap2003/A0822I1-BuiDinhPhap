@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = +prompt("Nhập số mảng phần tử");
+    let numberArray = [];
+    for (let i = 0; i < arr; i++) {
+        numberArray[i] = prompt('Nhập phần tử thứ' + i + 'của mảng');
+    }
+    function arrayReverse() {
+            numberArray.reverse();
+            alert(numberArray);
+    }
+   arrayReverse();
+</script>
+</body>
+</html>

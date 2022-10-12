@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let integera=+prompt("Nhập số thứ nhất:");
+  let integerb=+prompt("Nhập số thứ hai:");
+  let integerc=+prompt("Nhập số thứ ba:");
+  function integerMin(a,b,c) {
+    if (a < b && a < c){
+      alert("Số thứ nhất"+" "+integera+" "+ "là số Min");
+      return a;
+    }else if (b < a && b < c){
+      alert("Số thứ hai" +" "+integerb+" "+"là số Min");
+      return b;
+    }else {
+      alert("Số thứ ba" +" "+ integerc+ " "+"là số Min");
+      return c;
+    }
+  }
+  integerMin(integera,integerb,integerc);
+</script>
+</body>
+</html>
